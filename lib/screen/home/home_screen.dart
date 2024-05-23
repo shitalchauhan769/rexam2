@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:rexam2_core/screen/modal/studante_screen.dart';
 import 'package:rexam2_core/until/global.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   TextEditingController txtname = TextEditingController();
   TextEditingController txtgrid = TextEditingController();
   TextEditingController txtstd = TextEditingController();
+  TextEditingController txtimage = TextEditingController();
   GlobalKey<FormState> formkey = GlobalKey();
 
   @override
@@ -126,14 +128,18 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     ElevatedButton(
                                                         onPressed: () {
                                                           setState(() {
-
+                                                            StudanteModel c1=StudanteModel(txtgrid.text, txtname.text, txtstd.text,txtimage.text);
+                                                                StudanteList.add(c1);
+                                                                Navigator.pop(context);
                                                           });
                                                         },
                                                         child: const Text(
                                                             "UpDate")),
                                                     ElevatedButton(
                                                         onPressed: () {
-                                                          setState(() {});
+                                                          setState(() {
+                                                            StudanteList.removeAt(index);
+                                                          });
                                                         },
                                                         child: const Text(
                                                             "Cancel")),
