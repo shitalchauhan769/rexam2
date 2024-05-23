@@ -1,16 +1,3 @@
-# rexam2_core
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p>
+  <img str ="https://github.com/shitalchauhan769/rexam2/assets/155465990/525a550d-fa4c-405b-8cb9-89012cd81769"width="250""/>
+</p>
